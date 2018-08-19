@@ -1,0 +1,97 @@
+@import "./variables";
+
+body {
+  font-family: $font-primary;
+  line-height: 1.8;
+  font-size: 16px;
+  font-weight: 400;
+  background: lighten($brand-black, 98%);
+  color: lighten($brand-black, 50%);
+}
+
+a {
+  color: $brand-primary;
+  transition: 0.5s;
+  &:hover {
+    text-decoration: underline;
+    color: $brand-primary;
+  }
+  &:focus,
+  &:active {
+    outline: none;
+  }
+}
+p,
+span {
+  margin-bottom: 1.5em;
+  font-weight: 400;
+  font-family: $font-primary;
+}
+ul,
+ol {
+  display: block;
+  margin-bottom: 1.5em;
+}
+span {
+  font-size: 18px;
+  color: rgba($brand-lighter, 0.8);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: rgba($brand-black, 0.8);
+  font-family: $font-secondary;
+  margin: 0 0 30px 0;
+}
+::-webkit-selection {
+  color: $brand-body-color;
+  background: $brand-selection-color;
+}
+
+::-moz-selection {
+  color: $brand-body-color;
+  background: $brand-selection-color;
+}
+
+::selection {
+  color: $brand-body-color;
+  background: $brand-selection-color;
+}
+
+.bold {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  font-size: 250px;
+  color: lighten($brand-black, 94%);
+  font-weight: 700;
+  @media screen and(max-width: 768px) {
+    font-size: 60px;
+  }
+}
+
+.intro-heading {
+  margin-bottom: 3em;
+  h2 {
+    font-size: 34px;
+    font-weight: 400;
+    line-height: 1.5;
+    margin-bottom: 1.5em;
+    color: $brand-black;
+    position: relative;
+  }
+  span {
+    display: block;
+    text-transform: uppercase;
+    font-size: 12px;
+    letter-spacing: 3px;
+    margin-bottom: 10px;
+    color: lighten($brand-black, 75%);
+    font-weight: 600;
+  }
+}

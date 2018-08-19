@@ -1,0 +1,52 @@
+@import "_variables";
+#skills {
+  .skills-flex {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    .one-third {
+      width: 55%;
+      padding: 3em 2em 3em 0;
+    }
+    .one-forth {
+      width: 45%;
+      .one-third,
+      .one-forth {
+        display: inline-block;
+        @media screen and(max-width: 768px) {
+          height: 400px;
+        }
+      }
+    }
+    .one-third,
+    .one-forth {
+      display: inline-block;
+      @media screen and(max-width: 768px) {
+        width: 100%;
+        display: block;
+      }
+    }
+  }
+  .skills {
+    margin-bottom: 4em;
+    h3 {
+      font-family: $font-primary;
+      font-size: 16px;
+      text-transform: uppercase;
+      font-weight: 700;
+    }
+    ul {
+      li {
+        list-style: none;
+        margin-bottom: 10px;
+        &::before {
+          content: "\2022";
+          color: $brand-black;
+          display: inline-block;
+          width: 1em;
+          margin-left: -1em;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,11 @@
+.owen-section {
+  padding: 7.5em 0;
+  clear: both;
+  position: relative;
+}
+
+@media screen and (max-width: 768px) {
+  .owen-section {
+    padding: 5em 0;
+  }
+}

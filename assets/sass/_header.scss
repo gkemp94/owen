@@ -1,0 +1,63 @@
+@import "./variables";
+
+header {
+  padding: 2em 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 9;
+  margin: 0 auto;
+
+  .owen-navbar {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+
+    .owen-links {
+      display: flex;
+      align-items: center;
+      a {
+        padding-left: 15px;
+        color: $brand-black;
+        &:hover,
+        &:focus {
+          color: $brand-primary;
+          text-decoration: none;
+        }
+      }
+    }
+  }
+
+  .owen-navbar-brand {
+    float: left;
+    .owen-logo {
+      font-size: 20px;
+      text-transform: uppercase;
+      color: $brand-white;
+      font-weight: 400;
+      letter-spacing: 5px;
+      padding: 7px;
+      border: 1px solid $brand-black;
+      display: block;
+      text-align: center;
+      background: $brand-black;
+
+      &:hover {
+        text-decoration: none !important;
+      }
+
+      &:active,
+      &:focus {
+        outline: none;
+        text-decoration: none;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  header {
+    padding: 2em 0;
+  }
+}

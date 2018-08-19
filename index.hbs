@@ -1,0 +1,15 @@
+{{!< default}}
+
+{{#get "posts" slug="about" include="tags"}}
+  {{#foreach posts}}
+  {{> about}}
+  {{/foreach}}
+{{/get}}
+
+{{#get "posts" slug="skills" include="tags"}}
+  {{#foreach posts}}
+  {{> skills}}
+  {{/foreach}}
+{{/get}}
+
+{{> blog}}

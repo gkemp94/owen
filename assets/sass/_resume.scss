@@ -1,0 +1,26 @@
+@import "_variables";
+#resume {
+  > .row {
+    > .col-md-8 {
+      padding-right: 100px;
+    }
+  }
+  p {
+    margin: 0px 0px 0px;
+  }
+
+  .owen-bold {
+    font-size: 1.2em;
+    font-weight: 700;
+  }
+
+  .owen-emphasis {
+    font-family: $font-secondary;
+  }
+
+  .owen-date {
+    float: right;
+    font-size: 0.85em;
+    line-height: 2em;
+  }
+}

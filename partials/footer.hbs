@@ -1,0 +1,51 @@
+<footer>
+    <div id="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 col-pb-sm">
+                    <div class="row">
+                        <div class="col-md-10">
+                            <h2>Contact</h2>
+                            <p>Get in touch if you have any questions or comments</p>
+                            <p>
+                                <a href="#">georgekemp94@gmail.com</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-pb-sm">
+                    <h2>Latest Posts</h2>
+                    {{#get "posts" limit="3" as |recents|}} {{#foreach recents}}
+                    <div class="f-entry">
+                        <div class="desc">
+                            <span>{{date format="MMMM DD, YYYY"}}</span>
+                            <h3>
+                                <a href="{{url}}">{{title}}</a>
+                            </h3>
+                        </div>
+                    </div>
+                    {{/foreach}} {{/get}}
+                </div>
+                <div class="col-md-4 col-pb-sm">
+                    <h2>Newsletter</h2>
+                    <p>Keep up to date with new blog posts and updates</p>
+                    <div class="subscribe text-center">
+                        <div class="form-group">
+                            <input type="text" class="form-control text-center" placeholder="Enter Email address" disabled>
+                            <input type="submit" value="Coming Soon..." class="btn btn-primary btn-custom" disabled>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <p>
+                        &copy; Copyright {{date format="YYYY"}}
+                        <a href="{{@blog.url}}">{{@blog.title}}</a> Template adapted from
+                        <a href="https://colorlib.com" target="_blank">Colorlib</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>

@@ -1,0 +1,43 @@
+{
+  "name": "owen",
+  "version": "1.0.1",
+  "description": "Ghost Theme",
+  "scripts": {
+    "dev": "gulp",
+    "zip": "gulp zip",
+    "test": "gscan ."
+  },
+  "engines": {
+    "ghost": ">=1.0.0"
+  },
+  "author": {
+    "name": "George Owen Kemp",
+    "email": "georgeowenkemp@gmail.com"
+  },
+  "keywords": [
+    "ghost-theme"
+  ],
+  "config": {
+    "posts_per_page": 10
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "autoprefixer": "6.3.6",
+    "cssnano": "3.7.1",
+    "gscan": "^2.0.0",
+    "gulp": "3.9.1",
+    "gulp-livereload": "3.8.1",
+    "gulp-postcss": "6.1.1",
+    "gulp-sourcemaps": "1.6.0",
+    "gulp-util": "3.0.7",
+    "gulp-watch": "4.3.8",
+    "gulp-zip": "4.0.0",
+    "postcss-color-function": "2.0.1",
+    "postcss-custom-properties": "5.0.1",
+    "postcss-easy-import": "1.0.1"
+  },
+  "dependencies": {
+    "gulp-sass": "^4.0.1",
+    "gulp-size": "^3.0.0"
+  }
+}
